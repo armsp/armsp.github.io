@@ -1,10 +1,10 @@
-<head>
+<!-- <head>
     <link rel="canonical" href="https://www.shantamraj.com/"/>
     <meta http-equiv="refresh" content="5;URL=https://www.shantamraj.com/">
-</head>
+</head> -->
 
 Hello :wave:
 
 I am Shantam Raj and you can visit my website here : https://www.shantamraj.com
 
-You will be redirected there in 5 seconds...
+<!-- You will be redirected there in 5 seconds... -->
