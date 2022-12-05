@@ -5,6 +5,6 @@
 
 Hello :wave:
 
-I am Shantam Raj and you can visit my website here : https://www.shantamraj.com
+I am Shantam Raj and you can visit my website here : https://www.shantam.io
 
 <!-- You will be redirected there in 5 seconds... -->
