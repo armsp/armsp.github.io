@@ -4,45 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <title>Shantam Raj</title>
+    <meta name="description" content="Shantam Raj — researcher and engineer working on NLP, LLMs and AI for climate and social good. Writes code by day, poetry by night.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shantam Raj">
+    <meta property="og:description" content="Researcher & engineer — NLP, LLMs, AI for climate and social good. Code by day, poetry by night.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shantam.io">
+    <meta property="og:image" content="https://www.shantam.io/current.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/076ea8b30d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-2">
-        <div class="section-1">
-            <img src="current.jpg"></img>
-            <h2>Shantam Raj</h2>
-            <p>Curious, Driven, Engineer, Poet, Maker</p>
-            <a href="https://twitter.com/RajShantam"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/shantam-raj/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/armsp"><i class="fab fa-github" style="color: #6e5494;"></i></a>
+    <!-- Day/night toggle: a quiet nod to "code by day, poetry by night" -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode" title="Code by day, poetry by night">
+        <i class="fa-regular fa-moon" aria-hidden="true"></i>
+    </button>
 
-        </div>
-        <div class="section-2">
-            <h2>I write Code when the sun’s high,<br>
-                and Poetry when the moon’s nigh.</h2>
-            <p> Python, NLP, Data Science, Data Viz, Causal Inference, AI, Electronics, Photography. Polymath in progress<br> Looking for collaborations on designing hardware, products and(or) solutions for a sustainable future and for social good.</p>
-            
-            <!-- <h2>Skills</h2>
-            <p></p> -->
-            <h2>Creations and Projects <span style="font-size: smaller;">(check GitHub for latest updates...)</span></h2>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/trama">trama</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://aifu.shantam.io">AIFU</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://beej.shantam.io/">Beej</a><span style="font-size: smaller;">(retired)</span></div>
-            <div><object data="arrow.svg"/></object><a href="https://algowritten.org/algowritten-i-the-mozfest-short-story-collection/">Algowritten</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://www.shantam.io/goodmovies/">Goodmovies</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://covid-stories.github.io/">COVID-19 Stories</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://armsp.github.io/covidviz/">Professional Covid Viz</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/gifc">Gifc</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/template-conformance">Template Conformance</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/editorial-agent">Editorial Agent</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://armsp.github.io/nano-33-ble-gen/">nano-33-ble-gen</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/disradicator">disradicator</a></div>
-            <div><object data="arrow.svg"/></object><a href="https://github.com/armsp/active_or_passive">active or passive</a></div>
-            <!-- <h2>Contact</h2>
-            <p>myEmail@email.com</p> -->
-        </div>
-    </div>
+    <main class="wrap">
+
+        <!-- ===== Hero ===== -->
+        <header class="hero">
+            <div class="hero-head">
+                <img id="profile-pic" src="current.jpg" alt="Portrait of Shantam Raj">
+                <div class="hero-id">
+                    <h1>Shantam Raj</h1>
+                    <p class="tagline">Curious · Driven · Poet </p>
+                </div>
+            </div>
+            <p class="couplet">
+                <em>I write code when the sun&rsquo;s high,<br>
+                and poetry when the moon&rsquo;s nigh.</em>
+            </p>
+            <nav class="socials" aria-label="Links">
+                <a href="https://github.com/armsp" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/shantam-raj/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://aclanthology.org/people/shantam-raj/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> ACL Anthology</a>
+                <a href="https://huggingface.co/sraj" target="_blank" rel="noopener"><span class="hf" aria-hidden="true">&#129303;</span> Hugging Face</a>
+                <!-- TODO Shantam: replace # with your real Google Scholar profile URL -->
+                <!-- <a href="#"><i class="fa-brands fa-google-scholar"></i> Scholar</a> -->
+            </nav>
+        </header>
+
+        <!-- ===== About / Now ===== -->
+        <section class="block">
+            <h2 class="label">about</h2>
+            <p>
+                My work is interdisciplinary - <strong>NLP and LLMs</strong> at the core, with a slow,
+                deliberate turn toward <strong>policy</strong>. I&rsquo;m drawn to <strong>AI in education</strong>
+                and to <strong>econometric methods</strong> that surface effects at scale.
+            </p>
+            <p>
+                I am looking for ambitious collaborations for social good.
+            </p>
+        </section>
+
+        <!-- ===== Now ===== -->
+        <section class="block">
+            <h2 class="label">now</h2>
+            <!-- <p class="now-line now-day">
+                At the <strong>Department of Finance, UZH</strong>, I use NLP and AI to build tools and research
+                for <strong>climate and sustainability</strong>. I developed <strong>ClimateModernBERT</strong>
+                &mdash; a successor to ClimateBERT &mdash; and co-authored the EMNLP&nbsp;2025 work below.
+            </p> -->
+            <!-- <p class="now-line now-day">
+                Soon: Studying the <strong>cross-transfer of skills in LLMs</strong>
+                with Prof.&nbsp;Mrinmaya&nbsp;Sachan and Dr.&nbsp;Mubashara&nbsp;Akhtar.
+            </p> -->
+            <p class="now-line now-night">
+                Almost there: research on <strong>human preferences, stories and LLM alignment</strong>
+                with Prof.&nbsp;Elliott&nbsp;Ash at ETH&nbsp;Zurich.
+            </p>
+        </section>
+
+        <!-- ===== Affiliations ===== -->
+        <section class="block">
+            <h2 class="label">experience &amp; affiliations</h2>
+            <ul class="affiliations">
+                <li>
+                    <div class="aff-text">
+                        <span class="org">ETH&nbsp;AI&nbsp;Center</span>
+                        <span class="role">Affiliated Researcher</span>
+                    </div>
+                    <span class="aff-logo">
+                        <img class="logo-eth" src="ethaicenter.png" alt="ETH AI Center logo">
+                    </span>
+                </li>
+                <li>
+                    <div class="aff-text">
+                        <span class="org">University of Zurich</span>
+                        <span class="role">Research Assistant</span>
+                    </div>
+                    <span class="aff-logo">
+                        <img class="logo-swap logo-dark" src="uzh-white.png" alt="University of Zurich logo">
+                        <img class="logo-swap logo-light" src="uzh.png" alt="University of Zurich logo">
+                    </span>
+                </li>
+                <li>
+                    <div class="aff-text">
+                        <span class="org">SUREAL AI Lab</span>
+                        <span class="role">Researcher</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Selected publication ===== -->
+        <section class="block">
+            <h2 class="label">selected publications</h2>
+            <div class="pub pub-upcoming">
+                <span class="pub-title">ClimateModernBERT</span>
+                <span class="pub-meta">EMNLP 2026 · under review <span class="soon">coming soon</span></span>
+            </div>
+            <a class="pub" href="https://aclanthology.org/2025.emnlp-demos.9/" target="_blank" rel="noopener">
+                <span class="pub-title">Automated Evidence Extraction and Scoring for Corporate Climate Policy Engagement: A Multilingual RAG Approach</span>
+                <span class="pub-meta">EMNLP 2025</span>
+            </a>
+            <p class="more-link">
+                <a href="https://aclanthology.org/people/shantam-raj/" target="_blank" rel="noopener">All papers on ACL Anthology &rarr;</a>
+            </p>
+        </section>
+
+        <!-- ===== Talks ===== -->
+        <section class="block">
+            <h2 class="label">talks</h2>
+            <ul class="projects">
+                <li class="talk">
+                    <a href="https://www.youtube.com/watch?v=pPHhv7qsQ_8" target="_blank" rel="noopener"><span class="proj-name">Emulating NYT-grade visualizations in Python with Altair</span></a>
+                    <span class="talk-meta">PyData Global · 2020 · <a href="https://www.shantam.io/talks/pydataglobal-2020/" target="_blank" rel="noopener">Slides</a></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Work / Projects ===== -->
+        <section class="block">
+            <h2 class="label">selected work <span class="label-note">(GitHub has the latest)</span></h2>
+            <ul class="projects">
+                <li>
+                    <a href="https://lucan.earth" target="_blank" rel="noopener"><span class="proj-name">Lucan</span></a>
+                    <span class="proj-desc">lucan.earth</span>
+                </li>
+                <li>
+                    <a href="#"><span class="proj-name">Social Reward Modelling</span></a>
+                    <span class="proj-desc">Reward models for LLM alignment</span><em class="soon">coming soon</em>
+                </li>
+                <li class="upcoming">
+                    <span class="proj-name">Lobbying and Nature</span>
+                    <span class="proj-desc">Thesis · biodiversity &amp; corporate influence <em class="soon">coming soon</em></span>
+                </li>
+                <li>
+                    <a href="https://github.com/chatclimate-ai/digital-twin-satellite-pipeline" target="_blank" rel="noopener"><span class="proj-name">Digital Twin &mdash; Satellite Pipeline</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/trama" target="_blank" rel="noopener"><span class="proj-name">trama</span></a>
+                    <span class="proj-desc">Trope detection with LLaMA&nbsp;2</span>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/oh-my-slurm-eval" target="_blank" rel="noopener"><span class="proj-name">oh-my-slurm-eval</span></a>
+                    <span class="proj-desc">Running LLM evals on Slurm clusters</span>
+                </li>
+                <li>
+                    <a href="https://algowritten.org/algowritten-i-the-mozfest-short-story-collection/" target="_blank" rel="noopener"><span class="proj-name">Algowritten</span></a>
+                    <span class="proj-desc">Project with Mozilla on learning the biases in LLMs</span>
+                </li>
+                <li>
+                    <a href="https://armsp.github.io/covidviz/" target="_blank" rel="noopener"><span class="proj-name">Covid Viz</span></a>
+                    <span class="proj-desc">Data visualisation of the pandemic</span>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/gifc" target="_blank" rel="noopener"><span class="proj-name">Gifc</span></a>
+                    <span class="proj-desc">Command-line GIF tooling</span>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/template-conformance" target="_blank" rel="noopener"><span class="proj-name">Template Conformance</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/editorial-agent" target="_blank" rel="noopener"><span class="proj-name">Editorial Agent</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/armsp/active_or_passive" target="_blank" rel="noopener"><span class="proj-name">active or passive</span></a>
+                </li>
+                <li>
+                    <a href="https://beej.shantam.io/" target="_blank" rel="noopener"><span class="proj-name">Beej</span></a>
+                    <span class="proj-desc">Retired</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Footer / contact ===== -->
+        <footer class="footer">
+            <p class="colophon">&copy; 2026 Shantam Raj<a class="egg" href="https://www.shantam.io/goodmovies/" target="_blank" rel="noopener" aria-label="A few good movies" title="psst&hellip; a few good movies">&#127871;</a></p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Theme: respects saved choice, else system preference. Quiet day/night duality.
+        (function () {
+            const root = document.documentElement;
+            const btn = document.getElementById('theme-toggle');
+            const icon = btn.querySelector('i');
+            const saved = localStorage.getItem('theme');
+            const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+            const start = saved || (prefersLight ? 'light' : 'dark');
+            apply(start);
+
+            btn.addEventListener('click', function () {
+                apply(root.dataset.theme === 'dark' ? 'light' : 'dark');
+            });
+
+            function apply(theme) {
+                root.dataset.theme = theme;
+                localStorage.setItem('theme', theme);
+                icon.className = theme === 'dark' ? 'fa-regular fa-moon' : 'fa-regular fa-sun';
+            }
+        })();
+    </script>
 </body>
 </html>
